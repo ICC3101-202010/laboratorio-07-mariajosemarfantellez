@@ -50,6 +50,7 @@
             this.ButtonIgual = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ButtonHistorial = new System.Windows.Forms.Button();
+            this.HistorialText = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -260,12 +261,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.HistorialText);
             this.panel1.Controls.Add(this.ButtonHistorial);
             this.panel1.Controls.Add(this.Visualizacion);
             this.panel1.Controls.Add(this.ButtonPunto);
             this.panel1.Location = new System.Drawing.Point(3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 447);
+            this.panel1.Size = new System.Drawing.Size(451, 447);
             this.panel1.TabIndex = 20;
             // 
             // ButtonHistorial
@@ -278,11 +280,21 @@
             this.ButtonHistorial.UseVisualStyleBackColor = true;
             this.ButtonHistorial.Click += new System.EventHandler(this.ButtonHistorial_Click);
             // 
+            // HistorialText
+            // 
+            this.HistorialText.Location = new System.Drawing.Point(290, 45);
+            this.HistorialText.Multiline = true;
+            this.HistorialText.Name = "HistorialText";
+            this.HistorialText.ReadOnly = true;
+            this.HistorialText.Size = new System.Drawing.Size(149, 220);
+            this.HistorialText.TabIndex = 22;
+            this.HistorialText.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 293);
+            this.ClientSize = new System.Drawing.Size(454, 293);
             this.Controls.Add(this.ButtonIgual);
             this.Controls.Add(this.ButtonAns);
             this.Controls.Add(this.Button0);
@@ -334,5 +346,6 @@
         private System.Windows.Forms.Button ButtonIgual;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button ButtonHistorial;
+        private System.Windows.Forms.TextBox HistorialText;
     }
 }

@@ -24,6 +24,7 @@ namespace Laboratorio07
 
         private void Button0_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "0";
@@ -36,6 +37,7 @@ namespace Laboratorio07
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "1";
@@ -48,6 +50,7 @@ namespace Laboratorio07
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "2";
@@ -60,6 +63,7 @@ namespace Laboratorio07
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "3";
@@ -72,6 +76,7 @@ namespace Laboratorio07
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "4";
@@ -84,6 +89,7 @@ namespace Laboratorio07
 
         private void Button5_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "5";
@@ -96,6 +102,7 @@ namespace Laboratorio07
 
         private void Button6_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "6";
@@ -108,6 +115,7 @@ namespace Laboratorio07
 
         private void Button7_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "7";
@@ -120,6 +128,7 @@ namespace Laboratorio07
 
         private void Button8_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "8";
@@ -132,6 +141,7 @@ namespace Laboratorio07
 
         private void Button9_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "9";
@@ -144,6 +154,7 @@ namespace Laboratorio07
 
         private void ButtonAC_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             antes = 0;
             despues = 0;
             Visualizacion.Clear();
@@ -152,6 +163,7 @@ namespace Laboratorio07
 
         private void ButtonDiv_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             try
             {
                 antes = Convert.ToDouble(Visualizacion.Text);
@@ -167,6 +179,7 @@ namespace Laboratorio07
 
         private void ButtonX_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             try
             {
                 antes = Convert.ToDouble(Visualizacion.Text);
@@ -182,6 +195,7 @@ namespace Laboratorio07
 
         private void ButtonMas_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             try
             {
                 antes = Convert.ToDouble(Visualizacion.Text);
@@ -197,6 +211,7 @@ namespace Laboratorio07
 
         private void ButtonMenos_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             try
             {
                 antes = Convert.ToDouble(Visualizacion.Text);
@@ -212,6 +227,7 @@ namespace Laboratorio07
 
         private void ButtonIgual_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             try
             {
                 despues = Convert.ToDouble(Visualizacion.Text);
@@ -257,19 +273,22 @@ namespace Laboratorio07
 
         private void ButtonAns_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             Visualizacion.Text = respuesta;
         }
 
         private void ButtonHistorial_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = true;
             foreach (String a in historial)
             {
-                Visualizacion.Text = a;
+                HistorialText.Text =  HistorialText.Text + "  " + a;
             } 
         }
 
         private void ButtonDEL_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text != "")
             {
                 borrar = Visualizacion.Text.Length;
@@ -279,6 +298,7 @@ namespace Laboratorio07
 
         private void ButtonPunto_Click(object sender, EventArgs e)
         {
+            HistorialText.Visible = false;
             if (Visualizacion.Text == "")
             {
                 Visualizacion.Text = "0,";
