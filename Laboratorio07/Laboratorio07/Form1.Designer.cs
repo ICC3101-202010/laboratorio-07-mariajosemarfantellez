@@ -109,6 +109,7 @@
             this.ButtonAC.TabIndex = 5;
             this.ButtonAC.Text = "AC";
             this.ButtonAC.UseVisualStyleBackColor = true;
+            this.ButtonAC.Click += new System.EventHandler(this.ButtonAC_Click);
             // 
             // Button4
             // 
@@ -148,6 +149,7 @@
             this.ButtonX.TabIndex = 9;
             this.ButtonX.Text = "X";
             this.ButtonX.UseVisualStyleBackColor = true;
+            this.ButtonX.Click += new System.EventHandler(this.ButtonX_Click);
             // 
             // ButtonDiv
             // 
@@ -157,6 +159,7 @@
             this.ButtonDiv.TabIndex = 10;
             this.ButtonDiv.Text = "/";
             this.ButtonDiv.UseVisualStyleBackColor = true;
+            this.ButtonDiv.Click += new System.EventHandler(this.ButtonDiv_Click);
             // 
             // Button1
             // 
@@ -197,6 +200,7 @@
             this.ButtonMas.TabIndex = 14;
             this.ButtonMas.Text = "+";
             this.ButtonMas.UseVisualStyleBackColor = true;
+            this.ButtonMas.Click += new System.EventHandler(this.ButtonMas_Click);
             // 
             // ButtonMenos
             // 
@@ -207,6 +211,7 @@
             this.ButtonMenos.TabIndex = 15;
             this.ButtonMenos.Text = "-";
             this.ButtonMenos.UseVisualStyleBackColor = true;
+            this.ButtonMenos.Click += new System.EventHandler(this.ButtonMenos_Click);
             // 
             // Button0
             // 
@@ -247,6 +252,7 @@
             this.ButtonIgual.TabIndex = 19;
             this.ButtonIgual.Text = "=";
             this.ButtonIgual.UseVisualStyleBackColor = true;
+            this.ButtonIgual.Click += new System.EventHandler(this.ButtonIgual_Click);
             // 
             // panel1
             // 
