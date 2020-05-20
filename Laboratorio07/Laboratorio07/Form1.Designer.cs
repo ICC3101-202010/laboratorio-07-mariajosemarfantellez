@@ -49,16 +49,17 @@
             this.ButtonAns = new System.Windows.Forms.Button();
             this.ButtonIgual = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ButtonHistorial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Visualizacion
             // 
             this.Visualizacion.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Visualizacion.Location = new System.Drawing.Point(51, 22);
+            this.Visualizacion.Location = new System.Drawing.Point(75, 45);
             this.Visualizacion.Name = "Visualizacion";
             this.Visualizacion.ReadOnly = true;
-            this.Visualizacion.Size = new System.Drawing.Size(204, 44);
+            this.Visualizacion.Size = new System.Drawing.Size(209, 44);
             this.Visualizacion.TabIndex = 0;
             this.Visualizacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -100,6 +101,7 @@
             this.ButtonDEL.TabIndex = 4;
             this.ButtonDEL.Text = "DEL";
             this.ButtonDEL.UseVisualStyleBackColor = true;
+            this.ButtonDEL.Click += new System.EventHandler(this.ButtonDEL_Click);
             // 
             // ButtonAC
             // 
@@ -243,6 +245,7 @@
             this.ButtonAns.TabIndex = 18;
             this.ButtonAns.Text = "Ans";
             this.ButtonAns.UseVisualStyleBackColor = true;
+            this.ButtonAns.Click += new System.EventHandler(this.ButtonAns_Click);
             // 
             // ButtonIgual
             // 
@@ -257,18 +260,29 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.ButtonHistorial);
             this.panel1.Controls.Add(this.Visualizacion);
             this.panel1.Controls.Add(this.ButtonPunto);
             this.panel1.Location = new System.Drawing.Point(3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 455);
+            this.panel1.Size = new System.Drawing.Size(319, 447);
             this.panel1.TabIndex = 20;
+            // 
+            // ButtonHistorial
+            // 
+            this.ButtonHistorial.Location = new System.Drawing.Point(21, 45);
+            this.ButtonHistorial.Name = "ButtonHistorial";
+            this.ButtonHistorial.Size = new System.Drawing.Size(48, 44);
+            this.ButtonHistorial.TabIndex = 21;
+            this.ButtonHistorial.Text = "Historial";
+            this.ButtonHistorial.UseVisualStyleBackColor = true;
+            this.ButtonHistorial.Click += new System.EventHandler(this.ButtonHistorial_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 450);
+            this.ClientSize = new System.Drawing.Size(326, 293);
             this.Controls.Add(this.ButtonIgual);
             this.Controls.Add(this.ButtonAns);
             this.Controls.Add(this.Button0);
@@ -319,5 +333,6 @@
         private System.Windows.Forms.Button ButtonAns;
         private System.Windows.Forms.Button ButtonIgual;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button ButtonHistorial;
     }
 }

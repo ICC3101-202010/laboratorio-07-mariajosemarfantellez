@@ -14,7 +14,9 @@ namespace Laboratorio07
     public partial class Form1 : Form
     {
         double antes, despues;
-        string operaciones;
+        int borrar;
+        string operaciones, respuesta;
+        List<string> historial = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -157,7 +159,7 @@ namespace Laboratorio07
                 Visualizacion.Clear();
                 Visualizacion.Focus();
             }
-            catch(FormatException)
+            catch (FormatException)
             {
                 Visualizacion.Text = "Syntax ERROR";
             }
@@ -224,16 +226,25 @@ namespace Laboratorio07
                         }
                         else
                         {
+
+                            respuesta = Convert.ToString(antes / despues);
+                            historial.Add(antes + "/" + despues + "=" + respuesta);
                             Visualizacion.Text = Convert.ToString(antes / despues);
                             break;
                         }
                     case "x":
+                        respuesta = Convert.ToString(antes * despues);
+                        historial.Add(antes + "x" + despues + "=" + respuesta);
                         Visualizacion.Text = Convert.ToString(antes * despues);
                         break;
                     case "+":
+                        respuesta = Convert.ToString(antes + despues);
+                        historial.Add(antes + "+" + despues + "=" + respuesta);
                         Visualizacion.Text = Convert.ToString(antes + despues);
                         break;
                     case "-":
+                        respuesta = Convert.ToString(antes - despues);
+                        historial.Add(antes + "-" + despues + "=" + respuesta);
                         Visualizacion.Text = Convert.ToString(antes - despues);
                         break;
                 }
@@ -241,6 +252,28 @@ namespace Laboratorio07
             catch (FormatException)
             {
                 Visualizacion.Text = "Syntax ERROR";
+            }
+        }
+
+        private void ButtonAns_Click(object sender, EventArgs e)
+        {
+            Visualizacion.Text = respuesta;
+        }
+
+        private void ButtonHistorial_Click(object sender, EventArgs e)
+        {
+            foreach (String a in historial)
+            {
+                Visualizacion.Text = a;
+            } 
+        }
+
+        private void ButtonDEL_Click(object sender, EventArgs e)
+        {
+            if (Visualizacion.Text != "")
+            {
+                borrar = Visualizacion.Text.Length;
+                Visualizacion.Text = Visualizacion.Text.Substring(0, borrar - 1);
             }
         }
 
