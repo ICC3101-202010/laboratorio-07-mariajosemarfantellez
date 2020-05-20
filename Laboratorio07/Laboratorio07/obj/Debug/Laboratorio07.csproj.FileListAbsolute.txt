@@ -1,0 +1,9 @@
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\bin\Debug\Laboratorio07.exe.config
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\bin\Debug\Laboratorio07.exe
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\bin\Debug\Laboratorio07.pdb
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\obj\Debug\Laboratorio07.csprojAssemblyReference.cache
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\obj\Debug\Laboratorio07.Form1.resources
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\obj\Debug\Laboratorio07.csproj.GenerateResource.cache
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\obj\Debug\Laboratorio07.csproj.CoreCompileInputs.cache
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\obj\Debug\Laboratorio07.exe
+C:\Users\marim\Desktop\laboratorio-07-mariajosemarfantellez\Laboratorio07\Laboratorio07\obj\Debug\Laboratorio07.pdb
